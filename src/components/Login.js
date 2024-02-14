@@ -23,6 +23,9 @@ const Login = () => {
   return (
     <div className="max-w-sm mx-auto mt-8">
       <form onSubmit={handleLogin} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className='mb-4'>
+          <h1 className='text-center font-bold'>Product Recommendation Quiz Maker</h1>
+        </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
