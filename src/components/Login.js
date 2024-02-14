@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -61,7 +61,15 @@ const Login = () => {
           >
             Sign In
           </button>
+          <p className="text-sm">
+            Don't have an account? 
+            {' '}
+            <Link to="/Register" className="text-blue-500 hover:underline">
+              Click here
+            </Link>
+          </p>
         </div>
+
       </form>
     </div>
   );
