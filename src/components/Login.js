@@ -21,9 +21,10 @@ const Login = () => {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-8">
-      <form onSubmit={handleLogin} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="max-w-sm mx-auto mt-8 shadow">
+      <form onSubmit={handleLogin} className="bg-white rounded px-8 pt-6 pb-8 mb-4">
         <div className='mb-4'>
+          <h1 className='text-center font-bold text-3xl'>PQRM</h1>
           <h1 className='text-center font-bold'>Product Recommendation Quiz Maker</h1>
         </div>
         <div className="mb-4">
@@ -54,17 +55,19 @@ const Login = () => {
             required
           />
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-black hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Sign In
           </button>
+        </div>
+        <div className='text-center pt-4'>
           <p className="text-sm">
             Don't have an account? 
             {' '}
-            <Link to="/Register" className="text-blue-500 hover:underline">
+            <Link to="/Register" className="font-bold underline hover:text-red-700">
               Click here
             </Link>
           </p>
